@@ -11,13 +11,17 @@ var arrayTasks = {
 		 return newArray;
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
+	 //insertAt: function (arr, itemToAdd, index) {
 
-	// },
+	 //},
 
-	// square: function (arr) {
-
-	// },
+	 square: function (arr) {
+		 var newArray = [];
+		 for (let item of arr) {
+			 newArray.push(item*item);
+		 }
+		 return newArray;
+	 },
 
 	// sum: function (arr) {
 
