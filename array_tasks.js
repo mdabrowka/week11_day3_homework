@@ -31,9 +31,13 @@ var arrayTasks = {
 		 return total;
 	 },
 
-	// findDuplicates: function (arr) {
-
-	// },
+	 // findDuplicates: function (arr) {
+		//  var newArray = [];
+		//  for (let item of arr) {
+		// 	 if (item)
+		//  }
+		//  return newArray;
+	 // },
 
 	 removeAndClone: function (arr, valueToRemove) {
 		 var newArray = [];
@@ -45,9 +49,17 @@ var arrayTasks = {
 		 return newArray;
 	 },
 
-	// findIndexesOf: function (arr, itemToFind) {
-
-	// },
+	 findIndexesOf: function (arr, itemToFind) {
+		 var newArray = [];
+		 var index = 0;
+		 for (let item of arr) {
+			 if (item === itemToFind) {
+				 newArray.push(index);
+			 }
+			 index++;
+		 }
+		 return newArray;
+	 },
 
 	 sumOfAllEvenNumbersSquared: function (arr) {
 		 let total = 0;
