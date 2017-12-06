@@ -11,9 +11,10 @@ var arrayTasks = {
 		 return newArray;
 	},
 
-	 //insertAt: function (arr, itemToAdd, index) {
-
-	 //},
+	 insertAt: function (arr, itemToAdd, index) {
+	 	arr.splice(index, 0, itemToAdd);
+		return arr;
+	 },
 
 	 square: function (arr) {
 		 var newArray = [];
@@ -31,13 +32,13 @@ var arrayTasks = {
 		 return total;
 	 },
 
-	 // findDuplicates: function (arr) {
-		//  var newArray = [];
-		//  for (let item of arr) {
-		// 	 if (item)
-		//  }
-		//  return newArray;
-	 // },
+	  // findDuplicates: function (arr) {
+		//   var newArray = [];
+		//   for (let item of arr) {
+		//  	 if (item)
+		//   }
+		//   return newArray;
+	  // },
 
 	 removeAndClone: function (arr, valueToRemove) {
 		 var newArray = [];
