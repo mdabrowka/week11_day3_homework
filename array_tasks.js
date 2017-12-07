@@ -32,13 +32,18 @@ var arrayTasks = {
 		 return total;
 	 },
 
-	  // findDuplicates: function (arr) {
-		//   var newArray = [];
-		//   for (let item of arr) {
-		//  	 if (item)
-		//   }
-		//   return newArray;
-	  // },
+ 	  findDuplicates: function (arr) {
+			let newArray = [];
+			arr.forEach(function(number, index) {
+				if(arr.indexOf(number, index + 1) > -1) {
+					if(newArray.indexOf(number) === -1) {
+						newArray.push(number);
+					}
+				}
+			});
+			return newArray;
+		},
+
 
 	 removeAndClone: function (arr, valueToRemove) {
 		 var newArray = [];
